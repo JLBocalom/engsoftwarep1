@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Food</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Mudar cor para cor definida-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Container para a barra lateral e conteúdo principal */
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            /* Se necessário, adicione um fundo semi-transparente ou outra estilização */
+        }
+
+        /* Estilo para a barra lateral */
+        .side {
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            /* Inclui o padding no tamanho total */
+            /* Opcional: adicionar cor de fundo semi-transparente para melhorar a visibilidade do texto */
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Branco com 50% opacidade */
+        }
+
+        /* Estilo para o conteúdo principal */
+        .main {
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+            /* Inclui o padding no tamanho total */
+            /* Opcional: adicionar cor de fundo semi-transparente para melhorar a visibilidade do texto */
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Branco com 50% opacidade */
+        }
+
+        #bgdiv {
+            background-color: #f8e6e2;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav .search-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+
+            .topnav a,
+            .topnav input[type=text],
+            .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href=".html"><img class="img-responsive" src="" width="70" height="50" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
+                            <h4>Pontos Turísticos</h4>
+                        </a>
+                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
+                            <h4>Acomodações</h4>
+                        </a>
+                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
+                            <h4>Refeitório e Pscina</h4>
+                        </a>
+                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
+                            <h4>Área Recreativa</h4>
+                        </a>
+                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
+                            <h4>Pacotes Promocionais</h4>
+                        </a>
+                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
+                            <h4>Fale Conosco</h4>
+                        </a>
+                        <div class="search-container" style="float: inline-end; padding-top: 25px; ">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </ul>
+                    <!--
+            <ul class="nav navbar-nav navbar-right">    
+                <li><a class="navbar-brand" href="cadastrar.html"><span class="glyphicon glyphicon-user" style="padding-top: 10px;"></span> Cadastre-se</a></li>
+                <li><a class="navbar-brand" href="login.html"><span class="glyphicon glyphicon-log-in" style="padding-top: 10px;"></span> Login</a></li>    
+            </ul>
+            -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href=".html"><img class="img-responsive" src="" alt=""></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <!-- Início Carousel -->
+        <div class="row" style="padding-top: 10px">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <center>
+                                <a href=".html"><img class="img-responsive" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/03/melhores-resorts-all-inclusive-capa.jpeg" alt="primeira"
+                                        style="width: 100%; height: 500px;"></a>
+                            </center>
+                            <div class="carousel-caption">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <center>
+                                <a href=".html"><img class="img-responsive" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2023/08/resorts-visitar-agosto-capa.jpg" alt="segunda"
+                                        style="width: 100%; height: 500px;"></a>
+                            </center>
+                            <div class="carousel-caption">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <center>
+                                <a href=".html"><img class="img-responsive" src="https://www.hilton.com/im/en/MLEONWA/16775979/mleonwa-f-b-nava.jpg?impolicy=crop&cw=4500&ch=3000&gravity=NorthWest&xposition=250&yposition=0&rw=1280&rh=856" alt="terceira"
+                                        style="width: 100%; height: 500px;"></a>
+                            </center>
+                            <div class="carousel-caption">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Carousel -->
+    </div>
+    <div class="row">
+        <div class="side" style="height: 25%; float: inline-start;">
+            <h4>area da pesquisa e filtro</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="main" style="height: 75%; float: inline-end;">
+            <h4>onde vai ficar os patotes</h4>
+        </div>
+    </div>
+
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Última versão JavaScript compilada e minificada -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.scrollY >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
