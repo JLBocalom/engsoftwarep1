@@ -148,7 +148,7 @@ div#logo-header {
     background-color: var(--primary-color);
 }
 
-.sociais-footer > i {
+.sociais-footer>i {
     color: #fff;
     font-size: 20px;
     margin-top: 15px;
