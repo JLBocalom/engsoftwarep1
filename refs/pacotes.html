@@ -3,79 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Mudar cor para cor definida-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
     <title>Pacotes</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!--Inicio NavBar-->
+    <header class="header">
+        <!--Inicio Header-->
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
+                <img src="./img/logo png preta.png" id="logo" alt="logo" />
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
+                    <button type="button" id="btn-mobile" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                    <a href=".html"><img class="img-responsive"
-                            src="https://img.freepik.com/vetores-gratis/modelo-de-design-de-logotipo-de-praia-para-casa_474888-1858.jpg?t=st=1726096795~exp=1726100395~hmac=ba895b936793cafd6fc6b72fe8965bca28a289e739c390f904fb0f322140fea1&w=740"
-                            width="70" height="50" alt=""></a>
-
                 </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+                <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
-                            <h4>Pontos Turísticos</h4>
-                        </a>
-
-                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
-                            <h4>Acomodações</h4>
-                        </a>
-
-                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
-                            <h4>Refeitório e Pscina</h4>
-                        </a>
-
-                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
-                            <h4>Área Recreativa</h4>
-                        </a>
-
-                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
-                            <h4>Pacotes Promocionais</h4>
-                        </a>
-
-                        <a class="navbar-brand" href=".html" style="padding-top: 25px;">
-                            <h4>Fale Conosco</h4>
-                        </a>
+                        <li class="active"><a href="#">Início</a></li>
+                        <li><a href="#">Pontos Turísticos</a></li>
+                        <li><a href="#">Acomodações</a></li>
+                        <li><a href="#">Refeitório e Piscina</a></li>
+                        <li><a href="#">Área Recriativa</a></li>
+                        <li><a href="#">Pacotes Promocionais</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href=".html"><img class="img-responsive" src="" alt=""></a>
+                    <div class="sociais">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
                 </div>
             </div>
         </nav>
-        <!--Fim NavBar-->
-    </div>
+        <!--Fim Header-->
+    </header>
     <div class="container-fluid">
         <!-- Início Carousel -->
         <div class="row" style="padding-top: 10px">
@@ -136,10 +115,54 @@
         <!-- Fim Carousel -->
     </div>
     <div class="container-sm">100% wide until small breakpoint</div>
-<div class="container-md">100% wide until medium breakpoint</div>
-<div class="container-lg">100% wide until large breakpoint</div>
-<div class="container-xl">100% wide until extra large breakpoint</div>
-<div class="container-xxl">100% wide until extra extra large breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">100% wide until extra extra large breakpoint</div>
+
+    <footer class="footer">
+        <!--Inicio Footer-->
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20branca.png?token=GHSAT0AAAAAACWNLPRGRLXBLYMKK4RGJGGYZXUR7CQ" class="logo-footer" alt="logo-footer" />
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Quem Somos</h2>
+                    <p class="description-footer">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                        the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                        cites of the word in classical literature, discovered the undoubtable source.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Menu</h2>
+                    <p>Pontos Turísticos</p>
+                    <p>Acomodações</p>
+                    <p>Refeitório e Piscina</p>
+                    <p>Área Recreativa</p>
+                    <p>Pacotes Promocionais</p>
+                    <p>Fale Conosco</p>
+                    <p>Quem somos</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Endereço</h2>
+                    <p>Localidade: Gramado - RS</p>
+                    <p>Telefone: (XX) XXXXX-XXXX</p>
+                    <p>Email: contato@turistica.com.br</p>
+                    <h3>Newletter</h3>
+                    <input type="email" name="email" id="newsletter" placeholder="Seu email aqui..." />
+                    <input type="submit" value="Enviar" id="submit-newsletter" />
+                    <div class="sociais-footer">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+            <span>© Turistica - todos os direitos reservados 2024</span>
+        </div>
+        <!--Fim Footer-->
+    </footer>
 </body>
 
 </html>
